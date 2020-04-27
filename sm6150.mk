@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix
 
+# Audio effects
+PRODUCT_PACKAGES += \
+    libqcomvoiceprocessingdescriptors
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
