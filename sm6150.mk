@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libxml2 \
     Snap \
+    Gcam \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # CNE
