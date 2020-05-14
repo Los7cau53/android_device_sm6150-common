@@ -3,22 +3,16 @@ audio.soundtrigger.debug.urser_id u:object_r:vendor_audio_prop:s0
 ro.audio.recording.hd             u:object_r:vendor_audio_prop:s0
 elliptic.ultrasound.              u:object_r:vendor_audio_prop:s0
 
-# ramoops
-vendor.ramoops.             u:object_r:vendor_ramoops_prop:s0
-
 # Camera
-camera.                                      u:object_r:vendor_camera_prop:s0
-persist.camera.                              u:object_r:vendor_camera_prop:s0
-vendor.camera.sensor.                        u:object_r:vendor_camera_prop:s0
-vendor.camera.                               u:object_r:vendor_camera_prop:s0
-vendor.sys.camerainfo                        u:object_r:system_prop:s0
-vendor.debug.rs.                             u:object_r:public_vendor_default_prop:s0
+camera. u:object_r:vendor_camera_prop:s0
+persist.camera. u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.  u:object_r:vendor_camera_prop:s0
+vendor.camera.boot_complete                     u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.                               u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.res.fmq.size                   u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_prop:s0
 ro.camera.res.fmq.size                          u:object_r:vendor_camera_prop:s0
 ro.camera.req.fmq.size                          u:object_r:vendor_camera_prop:s0
-
 
 # Display feature
 ro.vendor.eyecare.threshold                  u:object_r:vendor_displayfeature_prop:s0
@@ -61,10 +55,8 @@ ro.boot.hwversion                   u:object_r:public_vendor_default_prop:s0
 ro.carrier.name                     u:object_r:public_vendor_default_prop:s0
 ro.miui.cust_variant                u:object_r:public_vendor_default_prop:s0
 
-
 # Init
 vendor.all.devices.ready        u:object_r:vendor_device_prop:s0
-
 
 # Power
 vendor.powerhal.state      u:object_r:power_prop:s0
@@ -80,8 +72,7 @@ persist.vendor.sys.pay     u:object_r:vendor_tee_listener_prop:s0
 ro.vendor.se.type          u:object_r:exported_default_prop:s0
 
 # RIL
-ril.ecclist.               u:object_r:vendor_radio_prop:s0
-ro.build.flavor            u:object_r:vendor_radio_prop:s0
+ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
 
 # Sensor
 persist.sensor.sardisable u:object_r:sensors_prop:s0
@@ -89,7 +80,6 @@ persist.sensor.sardisable u:object_r:sensors_prop:s0
 # Thermal
 sys.thermal.        u:object_r:thermal_normal_prop:s0
 vendor.sys.thermal.        u:object_r:thermal_normal_prop:s0
-
 
 # Touchfeature
 ro.vendor.touchfeature.type              u:object_r:vendor_touchfeature_prop:s0
