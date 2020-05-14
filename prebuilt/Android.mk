@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)	
 include $(CLEAR_VARS)	
-LOCAL_MODULE := gcam	
+LOCAL_MODULE := Gcam	
 LOCAL_MODULE_TAGS := optional	
 LOCAL_SRC_FILES := priv-app/gcam/gcam.apk	
 LOCAL_CERTIFICATE := PRESIGNED	
