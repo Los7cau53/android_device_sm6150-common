@@ -395,6 +395,11 @@ PRODUCT_PACKAGES += \
 # Thermal config
 
 # Thermal
+    android.hardware.thermal@2.0-service.pixel
+
+# Thermal config
+
+# Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.pixel
 
