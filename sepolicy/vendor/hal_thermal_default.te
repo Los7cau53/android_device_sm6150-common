@@ -6,3 +6,7 @@ allow hal_thermal_default self:netlink_kobject_uevent_socket create_socket_perms
 
 # read thermal_config
 get_prop(hal_thermal_default, vendor_thermal_prop)
+
+# Thermal
+type thermal_normal_prop, property_type;
+type vendor_thermal_prop, property_type;

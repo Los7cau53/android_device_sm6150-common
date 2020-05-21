@@ -389,6 +389,12 @@ PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
 # Thermal
+#PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.pixel
+
+# Thermal config
+
+# Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.pixel
 
@@ -396,6 +402,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-normal_mode.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal_mode.conf \
     $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+
 
 # Touchscreen
 PRODUCT_PACKAGES += \
