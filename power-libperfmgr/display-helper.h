@@ -14,8 +14,16 @@
  * limitations under the License.
  */
 
-#ifndef POWER_LIBPERFMGR_DISPLAY_HELPER_H_
-#define POWER_LIBPERFMGR_DISPLAY_HELPER_H_
+#ifndef __DISPLAY_HELPER_H__
+#define __DISPLAY_HELPER_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <cutils/sockets.h>
+
+#define DAEMON_SOCKET "pps"
 
 enum display_lpm_state {
     DISPLAY_LPM_OFF = 0,
@@ -25,4 +33,8 @@ enum display_lpm_state {
 
 void set_display_lpm(int enable);
 
-#endif  // POWER_LIBPERFMGR_DISPLAY_HELPER_H_
+#ifdef __cplusplus
+}
+#endif
+
+#endif //__DISPLAY_HELPER_H__

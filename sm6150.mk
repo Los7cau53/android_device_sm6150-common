@@ -302,11 +302,19 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # Power
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.pixel-libperfmgr \
     android.hardware.power.stats@1.0-service.pixel
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3-service.sm6150-libperfmgr \
+    powerhint.json
+
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
+
+#PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # QTI
