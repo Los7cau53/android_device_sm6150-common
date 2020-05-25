@@ -21,7 +21,14 @@ $(call inherit-product-if-exists, vendor/xiaomi/sm6150-common/sm6150-common-vend
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay 
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
+    $(LOCAL_PATH)/overlay/packages/apps/Snap
+
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
@@ -151,9 +158,9 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
+    Snap \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0
-
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
